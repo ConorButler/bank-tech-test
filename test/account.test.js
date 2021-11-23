@@ -24,9 +24,8 @@ describe('Account', () => {
     console.log = jest.fn();
 
     new Account().statement();
-
+    expect(console.log).toHaveBeenCalled();
     expect(statement).toHaveBeenCalledWith([]);
     // testing that it passes the account history to the statement module
-    expect(console.log).toHaveBeenCalled();
   });
 });

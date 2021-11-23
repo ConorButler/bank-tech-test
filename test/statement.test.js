@@ -4,27 +4,21 @@ describe('statement', () => {
   it('prints a statement given an account history', () => {
     let mockHistory = [
       {
-        transaction: {
-          date: new Date('11/20/2021'),
-          credit: 1000,
-          debit: null,
-        },
+        date: new Date('11/20/2021'),
+        credit: 1000,
+        debit: null,
         balance: 1000,
       },
       {
-        transaction: {
-          date: new Date('11/21/2021'),
-          credit: 2000,
-          debit: null,
-        },
+        date: new Date('11/21/2021'),
+        credit: 2000,
+        debit: null,
         balance: 3000,
       },
       {
-        transaction: {
-          date: new Date('11/22/2021'),
-          credit: null,
-          debit: 500,
-        },
+        date: new Date('11/22/2021'),
+        credit: null,
+        debit: 500,
         balance: 2500,
       },
     ];
