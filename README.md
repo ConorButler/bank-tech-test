@@ -7,10 +7,6 @@
 - Account statement (date, amount, balance) printing.
 - Data can be kept in memory (it doesn't need to be stored to a database or anything).
 
-# Assumptions:
-
-- Date will be given as a string and the amount as an integer
-
 ### Acceptance criteria
 
 **Given** a client makes a deposit of 1000 on 10-01-2023  

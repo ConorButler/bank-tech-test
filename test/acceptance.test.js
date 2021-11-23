@@ -3,9 +3,15 @@ const Account = require('../lib/account');
 it('Passes the acceptance criteria', () => {
   let bankAccount = new Account();
 
-  bankAccount.deposit(1000, '10/01/2023');
-  bankAccount.deposit(2000, '13/01/2023');
-  bankAccount.withdraw(500, '14/01/2023');
+  jest.useFakeTimers();
+  // mocking the current Date
+
+  jest.setSystemTime(new Date(2023, 0, 10));
+  bankAccount.deposit(1000);
+  jest.setSystemTime(new Date(2023, 0, 13));
+  bankAccount.deposit(2000);
+  jest.setSystemTime(new Date(2023, 0, 14));
+  bankAccount.withdraw(500);
 
   expect(bankAccount.statement()).toEqual(
     [
