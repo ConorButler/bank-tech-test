@@ -1,4 +1,4 @@
-const statement = require('./statement');
+const statement = require('../lib/statement');
 
 describe('statement', () => {
   it('prints a statement given an account history', () => {
@@ -7,18 +7,18 @@ describe('statement', () => {
         date: '20/11/2021',
         credit: 1000,
         debit: null,
-        balance: 1000.0,
+        balance: 1000,
       },
       {
         date: '21/11/2021',
         credit: 2000,
         debit: null,
-        balance: 3000.0,
+        balance: 3000,
       },
       {
         date: '22/11/2021',
         credit: null,
-        debit: 500.0,
+        debit: 500,
         balance: 2500,
       },
     ];

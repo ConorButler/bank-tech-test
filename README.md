@@ -7,6 +7,10 @@
 - Account statement (date, amount, balance) printing.
 - Data can be kept in memory (it doesn't need to be stored to a database or anything).
 
+# Assumptions:
+
+- Date will be given as a string and the amount as an integer
+
 ### Acceptance criteria
 
 **Given** a client makes a deposit of 1000 on 10-01-2023  
@@ -21,3 +25,5 @@ date || credit || debit || balance
 13/01/2023 || 2000.00 || || 3000.00
 10/01/2023 || 1000.00 || || 1000.00
 ```
+
+## This is tested in test/statement.test.js

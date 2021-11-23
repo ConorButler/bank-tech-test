@@ -1,7 +1,7 @@
-const Account = require('./account');
-const statement = require('./statement');
+const Account = require('../lib/account');
+const statement = require('../lib/statement');
 
-jest.mock('./statement');
+jest.mock('../lib/statement');
 
 describe('Account', () => {
   let bankAccount = new Account();

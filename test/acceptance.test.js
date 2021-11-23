@@ -1,4 +1,4 @@
-const Account = require('./account');
+const Account = require('../lib/account');
 
 it('Passes the acceptance criteria', () => {
   let bankAccount = new Account();
