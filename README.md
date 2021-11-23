@@ -27,3 +27,49 @@ date || credit || debit || balance
 ```
 
 ## This is tested in test/statement.test.js
+
+# Running the app
+
+Setup
+
+```
+git clone https://github.com/ConorButler/bank-tech-test.git
+cd bank-tech-test
+npm install
+npm test
+```
+
+Interacting with the app
+
+```
+node
+Account = require('./lib/account')
+```
+
+Whilst inside the node REPL you can do the following:
+
+Creating an account
+
+```
+bankAccount = new Account()
+```
+
+Depositing
+
+```
+bankAccount.deposit(500)
+```
+
+Withdrawing
+
+```
+bankAccount.withdraw(200)
+```
+
+Seeing a your statement
+
+```
+bankAccount.statement()
+```
+
+# My Approach

@@ -20,9 +20,13 @@ describe('Account', () => {
     expect(bankAccount.balance).toEqual(100);
   });
 
-  it('calls the statement module', () => {
+  it('logs a statement to console', () => {
+    console.log = jest.fn();
+
     new Account().statement();
+
     expect(statement).toHaveBeenCalledWith([]);
     // testing that it passes the account history to the statement module
+    expect(console.log).toHaveBeenCalled();
   });
 });

@@ -13,7 +13,9 @@ it('Passes the acceptance criteria', () => {
   jest.setSystemTime(new Date(2023, 0, 14));
   bankAccount.withdraw(500);
 
-  expect(bankAccount.statement()).toEqual(
+  console.log = jest.fn();
+  bankAccount.statement();
+  expect(console.log).toHaveBeenCalledWith(
     [
       'date || credit || debit || balance',
       '14/01/2023 || || 500.00 || 2500.00',
