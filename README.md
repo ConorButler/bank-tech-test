@@ -7,6 +7,10 @@
 - Account statement (date, amount, balance) printing.
 - Data can be kept in memory (it doesn't need to be stored to a database or anything).
 
+## Assumptions
+
+- The date is logged as the current date when the user makes a transaction
+
 ### Acceptance criteria
 
 **Given** a client makes a deposit of 1000 on 10-01-2023  
