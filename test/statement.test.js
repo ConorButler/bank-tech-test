@@ -34,6 +34,6 @@ describe('statement', () => {
   });
 
   it('only prints the header if history is empty', () => {
-    expect(statement()).toEqual('date || credit || debit || balance' + '\n');
+    expect(statement([])).toEqual('date || credit || debit || balance' + '\n');
   });
 });

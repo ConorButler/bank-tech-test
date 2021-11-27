@@ -23,7 +23,7 @@ describe('Account', () => {
   it('logs a statement to console', () => {
     console.log = jest.fn();
 
-    new Account().statement();
+    new Account().printStatement();
     expect(console.log).toHaveBeenCalled();
     expect(statement).toHaveBeenCalledWith([]);
     // testing that it passes the account history to the statement module

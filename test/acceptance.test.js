@@ -14,7 +14,7 @@ it('Passes the acceptance criteria', () => {
   bankAccount.withdraw(500);
 
   console.log = jest.fn();
-  bankAccount.statement();
+  bankAccount.printStatement();
   expect(console.log).toHaveBeenCalledWith(
     [
       'date || credit || debit || balance',
